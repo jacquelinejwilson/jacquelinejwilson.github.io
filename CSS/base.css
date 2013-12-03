@@ -1,5 +1,4 @@
 /* CSS for Jacqueline J. Wilson Webpage */
-/* This code is exactly the same as the code in the repository "Personal-Website-Project */
 
 body {
 	background-color:white; 
@@ -7,31 +6,30 @@ body {
 }
 
 header {
+left: 50%;
 	text-align:center;
 }
 
+
 nav {
-	width:960px;
+  left: 50%;
+	width:100%;
 	font-size: 1.2em;
 	text-align: center;
 	word-spacing: 20px;
-    padding-bottom: 10px
+  padding-bottom: 10px
 }
 
-article{
-    width:960px;
-	font-size: 1em;
-	text-align:left;
-	
+h1 {
+    text-align:center;
 }
-    
 
-content {
-    width:960px
-    }	
+
 
 footer {
-    text-align: center
+clear:both;
+left: 50%;
+text-align: center;
 	}
 	
 
@@ -51,20 +49,22 @@ footer {
     
 
 #content {
-	width:10px;
 	margin-left:10px;
 	padding-left: 10px;
-    text-align: right;
+  text-align: center;
+	}
+	
+	#centerContentContainer{
+	margin-left:25%;
+  text-align: center;
+	}
+	
+	#centerContent {
+	margin-left:10px;
+	margin-right: 25%;
+  text-align: left;
 	}
 
-		
-#nav ul,li {
-	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-	list-style-type: none;
-	margin:0px;
-	padding:5px;
-	display: inline;
-	}
 		
 
 a:link {
@@ -89,14 +89,42 @@ footer ul {
 }
 	
 footer {
+clear:both;
 	font-size: 15px;
-    text-align: right;
+  text-align: center;
 	}
 
 footer p {
-	text-align: right;
+clear:both;
+	text-align: center;
 	}
 
-	
-	
-        
+@media screen (max-width: 600px) {
+
+    body {
+        padding: 5%
+
+}
+
+    article {
+    text-align: center;
+        margin-left: 5%;
+        width: 90%;
+
+}
+        figure {
+        margin-left: 5%;
+        width: 90%;
+}
+
+    nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+    nav li {
+    display:inline;
+    margin-right: 10px;
+    text-align: center;
+    
+    }
